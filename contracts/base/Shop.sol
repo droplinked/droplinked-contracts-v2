@@ -549,25 +549,24 @@ contract DropShop is
     }
 
     function onERC1155Received(
-        address operator,
-        address from,
-        uint256 id,
-        uint256 value,
-        bytes calldata data
+        address,
+        address,
+        uint256,
+        uint256,
+        bytes calldata
     ) external returns (bytes4) {
         receivedProduct = true;
         return IERC1155Receiver.onERC1155Received.selector;
     }
 
     function onERC1155BatchReceived(
-        address operator,
-        address from,
-        uint256[] calldata ids,
-        uint256[] calldata values,
-        bytes calldata data
+        address,
+        address,
+        uint256[] calldata,
+        uint256[] calldata,
+        bytes calldata
     ) external pure returns (bytes4) {
         revert("Shop does not support erc1155 batch transfer");
-        return this.onERC1155Received.selector;
     }
 
     function supportsInterface(
