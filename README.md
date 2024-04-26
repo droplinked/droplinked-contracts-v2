@@ -62,5 +62,6 @@ npx hardhat run scripts/deploy.ts --network polygon_mumbai
 would result in something like this
 
 [ ✅ ] Deployer deployed to: 0x34C4db97cE4cA2cce48757F85C954C5647124106 with fee: 100 and heartbeat: 120
+
 [ ✅ ] PaymentProxy deployed to: 0x34C4db97cE4cA2cce48757F85C954C5647124106
 
