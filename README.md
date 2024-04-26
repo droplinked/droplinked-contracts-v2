@@ -2,14 +2,14 @@
 This repository contains the droplinked's smart-contract source code for EVM chains that droplinked integrates with, including : Polygon, Binance, Hedera and Ripple sidechain
 
 ## Run tests
-To run the tests on the contract you can run the following command: 
+To run the tests on the contract you can run the following command in the dev branch: 
 `npm run test`
 
 ```
   Shop
     Deployment
-NFT deployed to: 0xB7A5bd0345EF1Cc5E66bf61BdeC17D2461fBd968
-Shop deployed to: 0x45F0CBB45dF62A2BadB0295018176B67337BF262
+NFT deployed to: 0xbf9fBFf01664500A33080Da5d437028b07DFcC55
+Shop deployed to: 0x379F6cc50026646dA9452610CD48d13A5d7fb6ae
 Shop Owner: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 , owner account: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
       ✔ Should deploy shop
       ✔ Should set the right fee
@@ -32,17 +32,22 @@ Shop Owner: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 , owner account: 0xf39Fd6
       ✔ Should accept a request
       ✔ Should not accept a request if it is not the producer
     DisapproveRequest
-      ✔ Should disapprove a request
-      ✔ Should not disapprove a request if it is not the producer
+      ✔ Should disapprove a request (40ms)
+      ✔ Should not disapprove a request if it is not the producer (48ms)
     purchase
-      ✔ Should purchase a product (69ms)
-      ✔ Should purchase a product with native token as price (63ms)
-      ✔ Should purchase a product which has beneficiaries (76ms)
-      ✔ Should purchase a product which has beneficiaries & affiliate (84ms)
-      ✔ Should purchase a product which has beneficiaries & affiliate with token (172ms)
+      ✔ Should purchase a product (103ms)
+      ✔ Should purchase a product with native token as price (70ms)
+      ✔ Should purchase a product which has beneficiaries (78ms)
+      ✔ Should purchase a product which has beneficiaries & affiliate (102ms)
+      ✔ Should purchase a product which has beneficiaries & affiliate with token (138ms)
     MultiProduct purchase
-      ✔ Should purchase a product (65ms)
-      ✔ Should purchase a product which has beneficiaries & affiliate with token through proxy (143ms)
+      ✔ Should purchase a product (79ms)
+      ✔ Should purchase a product which has beneficiaries & affiliate with token through proxy (146ms)
+      ✔ Should purchase a product with native token as price through proxy (68ms)
+      ✔ Should purchase two products (136ms)
+
+
+  26 passing (6s)
 ```
 ## Deploy
 To deploy the contract to a network, follow these steps:
